@@ -40,7 +40,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   #### Airbnb home pagina: 
   <img src="readme-images/airbnb-home.png" width="375px" alt="Home pagina van Airbnb">
-  #### Airbnb pagina van een Bungalow:
+  
+  #### Airbnb pagina van een bungalow: 
   <img src="readme-images/airbnb-bungalow.png" width="375px" alt="Pagina van een bungalow">
  
 </details>
