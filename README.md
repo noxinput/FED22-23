@@ -38,12 +38,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Je opdracht:
   [Airbbnb](https://www.airbnb.nl)
   
-  #### Screenshot(s) van de eerste pagina (small screen): 
-  Airbnb Home Pagina
+  #### Airbnb home pagina: 
   <img src="readme-images/airbnb-home.png" width="375px" alt="Home pagina van Airbnb">
-
-  #### Screenshot(s) van de tweede pagina (small screen):
-  Airbnb 
+  #### Airbnb pagina van een Bungalow:
   <img src="readme-images/airbnb-bungalow.png" width="375px" alt="Pagina van een bungalow">
  
 </details>
