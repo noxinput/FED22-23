@@ -36,7 +36,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  [Airbbnb](https://www.airbnb.nl)
+  [Airbnb](https://www.airbnb.nl)
   
   #### Airbnb home pagina: 
   <img src="readme-images/airbnb-home.png" width="375px" alt="Home pagina van Airbnb">
