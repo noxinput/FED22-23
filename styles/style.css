@@ -15,21 +15,21 @@ button, summary {
 /****************/
 @font-face {
   font-family: 'CerealMedium';
-  src: url('../fonts/Airbnb_Cereal-Medium.woff2') format('woff2');
+  src: url('../fonts/Airbnb-Cereal-Medium.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'CerealBold';
-  src: url('../fonts/Airbnb_Cereal-Medium.woff2') format('woff2');
+  src: url('../fonts/Airbnb-Cereal-Medium.woff2') format('woff2');
   font-weight: bolder;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'CerealBook';
-  src: url('../fonts/Airbnb_Cereal-Book.woff2') format('woff2');
+  src: url('../fonts/Airbnb-Cereal-Book.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
