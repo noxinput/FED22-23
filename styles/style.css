@@ -223,13 +223,22 @@ footer strong {
   font-size: 14px;
 }
 
-/* remove border from buttons  */
+/* position and style buttons */
 footer section:nth-last-child(2) {
   border: none;
+  display: flex;
+  align-items: center;
 }
 
-footer section:nth-last-child(2) button::before{
+footer section:nth-last-child(2) button{
+  background: none;
   border: none;
+  font-family: CerealMedium;
+  font-size: 14px;
+}
+
+footer section:nth-last-child(2) button:hover {
+  text-decoration: underline;
 }
 
 /* path {
