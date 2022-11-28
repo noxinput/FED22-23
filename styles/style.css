@@ -180,19 +180,19 @@ footer section:nth-last-child(2) button::before{
   fill:red;
 } */
 
-footer section:nth-of-type(6) p {
-  display: block;
+footer section:nth-of-type(6) li:first-of-type {
+  grid-column: 1/3;
 }
 
 footer section:nth-of-type(6) ul {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 
-footer section:nth-of-type(6) ul li {
-
-}
+/* footer section:nth-of-type(6) ul li:nth-of-type(1) {
+  position: relative;
+} */
 
 /********************/
 /* ALGEMENE STIJLEN */
@@ -219,9 +219,9 @@ footer section:nth-of-type(6) ul li {
   .caroCarrousel {
       /* basis waarden die door de hele carrousel gebruikt worden */
       /* kun je zelf aanpassen */
-      --caroCarrouselMainColor:#333;
-    --caroCarrouselAccentColor:#1b75b3;
-      --caroCarrouselShadeColor:#ddd9;
+      --caroCarrouselMainColor:#000;
+    --caroCarrouselAccentColor:#222;
+      --caroCarrouselShadeColor:rgba(255, 255, 255, 0.9);
   
     position: relative;
     overflow: hidden; /* om de linkbuttons te verbergen */
@@ -231,9 +231,12 @@ footer section:nth-of-type(6) ul li {
   /* dark mode */
   @media (prefers-color-scheme: dark) {
     .caroCarrousel {
-      --caroCarrouselMainColor:#ccc;
-      --caroCarrouselShadeColor:#4449;
+      --caroCarrouselMainColor:rgb(0, 0, 0);
+      --caroCarrouselShadeColor:rgba(255, 255, 255, 0.9);
     }
+    /* .caroCarrousel path {
+      stroke:white;
+    } */
   }
   
   
@@ -245,7 +248,7 @@ footer section:nth-of-type(6) ul li {
       display: flex;
       
       /* handmatig scrollen is mogelijk */
-      overflow: hidden;
+      overflow: scroll;
       
       /* snappen als er gescrolled wordt - andere helft bij li */
     scroll-snap-type: inline mandatory;
@@ -290,19 +293,20 @@ footer section:nth-of-type(6) ul li {
   /****************************/
   .caroCarrousel > a {
     position: absolute;
-    width: 3em;
+    width: 2em;
     aspect-ratio:1/1;
       top: calc(50% - 1.5em);
     
     color: var(--caroCarrouselMainColor);
     background-color: var(--caroCarrouselShadeColor);
     outline: none;
-      box-shadow: inset 0 0 0 1px currentColor;
+      box-shadow:  1px 0px 5px 0px currentColor;
+    border-radius: 100%;
       
     display:grid;
     place-items:center;
     
-    transition: 0.5s;
+    transition: 0.1s;
   }
   
   /* initieel staan de links "buiten beeld" */
@@ -324,13 +328,13 @@ footer section:nth-of-type(6) ul li {
   }
   
   /* prev en next linkbuttons pijltjes */
-  .caroCarrousel > a::before,
+  /* .caroCarrousel > a::before,
   .caroCarrousel > a::after {
     content: "";
     position: absolute;
-    width: 1em; height: 4px;
+    width: 0.6em; height: 2px;
     background-color: currentColor;
-  }
+  } */
   
   .caroCarrousel > a[href=previous]::before {
       transform-origin: 2px center;
