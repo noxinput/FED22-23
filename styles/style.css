@@ -10,26 +10,32 @@ button, summary {
 }
 
 
+/****************/
+/* ADDING FONTS */
+/****************/
 @font-face {
-    font-family: 'CerealMedium';
-    src: url('/fonts/Airbnb_Cereal-Medium.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-  }
+  font-family: 'CerealMedium';
+  src: url('/fonts/Airbnb_Cereal-Medium.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: 'CerealBold';
-    src: url('/fonts/Airbnb_Cereal-Medium.woff2') format('woff2');
-    font-weight: bolder;
-    font-style: normal;
-  }
+@font-face {
+  font-family: 'CerealBold';
+  src: url('/fonts/Airbnb_Cereal-Medium.woff2') format('woff2');
+  font-weight: bolder;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: 'CerealBook';
-    src: url('/fonts/Airbnb_Cereal-Book.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
+@font-face {
+  font-family: 'CerealBook';
+  src: url('/fonts/Airbnb_Cereal-Book.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 
 
 /*********************/
@@ -48,19 +54,9 @@ button, summary {
 
 
 
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
-
-body {
-  color:var(--color-text);
-  background-color:var(--color-background);
-  font-family: CerealMedium;
-  margin: 0;
-}
-
+/***********/
+/* STYLING */
+/***********/
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -71,13 +67,22 @@ body {
   width: 1px;
 }
 
-header nav {
-  overflow: hidden;
+body {
+  color:var(--color-text);
+  background-color:var(--color-background);
+  font-family: CerealMedium;
+  margin: 0;
 }
 
-header > nav img {
-  max-width: 26px;
-  margin-bottom: 4px;
+
+
+
+
+/******************/
+/* HEADER STYLING */
+/******************/
+header nav {
+  overflow: hidden;
 }
 
 header > nav ul{
@@ -115,10 +120,74 @@ header > nav a:focus {
   color: var(--header-focused);
 }
 
-section:nth-of-type(2) img {
-  max-width: 260px;
+header > nav img {
+  max-width: 26px;
+  margin-bottom: 4px;
 }
 
+
+
+
+
+/******************/
+/* FOOTER STYLING */
+/******************/
+footer section {
+  text-decoration: none;
+  margin: 24px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+footer ul li {
+  list-style-type: none;
+  font-size: 14px;
+  font-family: CerealBook;
+  margin-top: 12px;
+}
+
+footer section a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+footer section a:hover {
+  text-decoration: underline;
+}
+
+footer strong {
+  font-size: 14px;
+}
+
+/* remove border from buttons  */
+footer section:nth-last-child(2) {
+  border: none;
+}
+
+footer section:nth-last-child(2) button::before{
+  border: none;
+}
+
+/* path {
+  fill:red;
+} */
+
+/* positioning for last footer items */
+footer section:nth-of-type(6) li:first-of-type {
+  grid-column: 1/3;
+}
+
+footer section:nth-of-type(6) ul {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+
+
+
+
+/****************/
+/* MAIN STYLING */
+/****************/
 main section:nth-of-type(2) > ul {
   display: flex;
   flex-direction: column;
@@ -133,228 +202,161 @@ ul {
   padding: 0;
 }
 
+/* used to put image above the text */
 main section > ul li {
   display: flex;
   flex-direction: column-reverse;
 }
 
 
-footer section {
-  text-decoration: none;
-  margin: 24px;
-  border-bottom: 1px solid #DDDDDD;
-}
 
-footer ul li {
-  list-style-type: none;
-  font-size: 14px;
-}
 
-footer section ul li  {
-  font-family: CerealBook;
-  margin-top: 12px;
-}
 
-footer section a {
-  text-decoration: none;
-  color: var(--link-color);
-}
-
-footer section a:hover {
-  text-decoration: underline;
-}
-
-strong {
-  font-size: 14px;
-}
-
-footer section:nth-last-child(2) {
-  border: none;
-}
-
-footer section:nth-last-child(2) button::before{
-  border: none;
-}
-
-/* path {
-  fill:red;
-} */
-
-footer section:nth-of-type(6) li:first-of-type {
-  grid-column: 1/3;
-}
-
-footer section:nth-of-type(6) ul {
-  display: grid;
-  grid-template-columns: 50% 50%;
+/*******************/
+/* SECTION STYLING */
+/*******************/
+section:nth-of-type(2) img {
+  max-width: 260px;
 }
 
 
-/* footer section:nth-of-type(6) ul li:nth-of-type(1) {
-  position: relative;
-} */
 
-/********************/
-/* ALGEMENE STIJLEN */
-/********************/
 
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  
-  :root {
-      --maxWidth:32rem;
-  }
-  
-  body {
-      grid-template-columns: minmax(auto, var(--maxWidth));
-      justify-content:center;
-  }
-  
-    
+
   /******************************/
   /* DE CAROCARROUSEL CONTAINER */
   /******************************/
   
+.caroCarrousel {
+  /* basis waarden die door de hele carrousel gebruikt worden */
+  /* kun je zelf aanpassen */
+  --caroCarrouselMainColor:#000;
+  --caroCarrouselAccentColor:#222;
+  --caroCarrouselShadeColor:rgba(255, 255, 255, 0.9);
+
+  position: relative;
+  overflow: hidden; /* om de linkbuttons te verbergen */
+  outline:none;
+}
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
   .caroCarrousel {
-      /* basis waarden die door de hele carrousel gebruikt worden */
-      /* kun je zelf aanpassen */
-      --caroCarrouselMainColor:#000;
-    --caroCarrouselAccentColor:#222;
-      --caroCarrouselShadeColor:rgba(255, 255, 255, 0.9);
-  
-    position: relative;
-    overflow: hidden; /* om de linkbuttons te verbergen */
-      outline:none;
+    --caroCarrouselMainColor:rgb(0, 0, 0);
+    --caroCarrouselShadeColor:rgba(255, 255, 255, 0.9);
   }
-  
-  /* dark mode */
-  @media (prefers-color-scheme: dark) {
-    .caroCarrousel {
-      --caroCarrouselMainColor:rgb(0, 0, 0);
-      --caroCarrouselShadeColor:rgba(255, 255, 255, 0.9);
-    }
-    /* .caroCarrousel path {
-      stroke:white;
-    } */
-  }
-  
-  
-  /************************************/
-  /* de carrousel elementen container */
-  .caroCarrousel > ul {
-    margin: 0; padding: 0;
-    list-style: none;
-      display: flex;
-      
-      /* handmatig scrollen is mogelijk */
-      overflow: scroll;
-      
-      /* snappen als er gescrolled wordt - andere helft bij li */
-    scroll-snap-type: inline mandatory;
-    
-    /* smooth scrollen */
-      scroll-behavior: smooth;
-    
-    /* scrollbar zoveel mogelijk verbergen */
-    -webkit-overflow-scrolling: touch; /* voor iOS*/
-    -ms-overflow-style: none; /* voor IE */
-      scrollbar-width: none; /* voor firefox */
-  }
-  
-  .caroCarrousel > ul::-webkit-scrollbar {
-    /* scrollbar zoveel mogelijk verbergen */
-    display: none; /* voor chrome, safari en edge*/
-  }
-  
-  
-  /**************************/
-  /* de carrousel elementen */
-  .caroCarrousel > ul li {
-    flex-basis: 100%;
-    flex-shrink: 0;
-    /* snappen als er gescrolled wordt - andere helft bij ul */
-      scroll-snap-align:center;
-  }
-  
-  
-  /**********************************/
-  /* de carrousel elementen content */
-  
-  /* de stijlen voor jouw content hier */
-  .caroCarrousel > ul li > img {
-    display: block;
-    width: 100%;
-  }
-  
-  
-  /****************************/
-  /* PREV EN NEXT LINKBUTTONS */
-  /****************************/
-  .caroCarrousel > a {
-    position: absolute;
-    width: 2em;
-    aspect-ratio:1/1;
-      top: calc(50% - 1.5em);
-    
-    color: var(--caroCarrouselMainColor);
-    background-color: var(--caroCarrouselShadeColor);
-    outline: none;
-      box-shadow:  1px 0px 5px 0px currentColor;
-    border-radius: 100%;
-      
-    display:grid;
-    place-items:center;
-    
-    transition: 0.1s;
-  }
-  
-  /* initieel staan de links "buiten beeld" */
-  .caroCarrousel > a[href="previous"] {
-    left:-3.5em;
-  }
-  .caroCarrousel > a[href="next"] {
-    right: -3.5em;
-  }
-  
-  /* bij hover en focus schuiven de links in beeld */
-  .caroCarrousel:hover > a[href="previous"],
-  .caroCarrousel:focus-within > a[href="previous"] {
-    left:.5em;
-  }
-  .caroCarrousel:hover > a[href="next"],
-  .caroCarrousel:focus-within > a[href="next"] {
-    right:.5em;
-  }
-  
-  /* prev en next linkbuttons pijltjes */
-  /* .caroCarrousel > a::before,
-  .caroCarrousel > a::after {
-    content: "";
-    position: absolute;
-    width: 0.6em; height: 2px;
-    background-color: currentColor;
+  /* .caroCarrousel path {
+    stroke:white;
   } */
+}
+
+/************************************/
+/* de carrousel elementen container */
+.caroCarrousel > ul {
+  margin: 0; padding: 0;
+  list-style: none;
+  display: flex;
+    
+  /* handmatig scrollen is mogelijk */
+  overflow: scroll;
+    
+  /* snappen als er gescrolled wordt - andere helft bij li */
+  scroll-snap-type: inline mandatory;
   
-  .caroCarrousel > a[href=previous]::before {
-      transform-origin: 2px center;
-      transform: translateY(0) rotate(45deg);
-  }
-  .caroCarrousel > a[href=previous]::after {
-      transform-origin: 2px center;
-      transform: translateY(0) rotate(-45deg);
-  }
+  /* smooth scrollen */
+  scroll-behavior: smooth;
   
-  .caroCarrousel > a[href=next]::before {
-      transform-origin: calc(100% - 2px) center;
-      transform: translateY(0) rotate(45deg);
-  }
-  .caroCarrousel > a[href=next]::after {
-      transform-origin: calc(100% - 2px) center;
-      transform: translateY(0) rotate(-45deg);
-  }
+  /* scrollbar zoveel mogelijk verbergen */
+  -webkit-overflow-scrolling: touch; /* voor iOS*/
+  -ms-overflow-style: none; /* voor IE */
+  scrollbar-width: none; /* voor firefox */
+}
+
+.caroCarrousel > ul::-webkit-scrollbar {
+  /* scrollbar zoveel mogelijk verbergen */
+  display: none; /* voor chrome, safari en edge*/
+}
+
+/**************************/
+/* de carrousel elementen */
+.caroCarrousel > ul li {
+  flex-basis: 100%;
+  flex-shrink: 0;
+  /* snappen als er gescrolled wordt - andere helft bij ul */
+  scroll-snap-align:center;
+}
+
+/**********************************/
+/* de carrousel elementen content */
+/* de stijlen voor jouw content hier */
+.caroCarrousel > ul li > img {
+  display: block;
+  width: 100%;
+}
+
+
+
+
+
+/****************************/
+/* PREV EN NEXT LINKBUTTONS */
+/****************************/
+.caroCarrousel > a {
+  position: absolute;
+  width: 2em;
+  aspect-ratio:1/1;
+  top: calc(50% - 1.5em);
   
-  .caroCarrousel > a:hover,
-  .caroCarrousel > a:focus {
-    color: var(--caroCarrouselAccentColor);
-  }
+  color: var(--caroCarrouselMainColor);
+  background-color: var(--caroCarrouselShadeColor);
+  outline: none;
+  box-shadow:  1px 0px 5px 0px currentColor;
+  border-radius: 100%;
+    
+  display:grid;
+  place-items:center;
+  
+  transition: 0.1s;
+}
+
+/* initieel staan de links "buiten beeld" */
+.caroCarrousel > a[href="previous"] {
+  left:-3.5em;
+}
+.caroCarrousel > a[href="next"] {
+  right: -3.5em;
+}
+
+/* bij hover en focus schuiven de links in beeld */
+.caroCarrousel:hover > a[href="previous"],
+.caroCarrousel:focus-within > a[href="previous"] {
+  left:.5em;
+}
+.caroCarrousel:hover > a[href="next"],
+.caroCarrousel:focus-within > a[href="next"] {
+  right:.5em;
+}
+
+.caroCarrousel > a[href=previous]::before {
+    transform-origin: 2px center;
+    transform: translateY(0) rotate(45deg);
+}
+
+.caroCarrousel > a[href=previous]::after {
+    transform-origin: 2px center;
+    transform: translateY(0) rotate(-45deg);
+}
+
+.caroCarrousel > a[href=next]::before {
+    transform-origin: calc(100% - 2px) center;
+    transform: translateY(0) rotate(45deg);
+}
+.caroCarrousel > a[href=next]::after {
+    transform-origin: calc(100% - 2px) center;
+    transform: translateY(0) rotate(-45deg);
+}
+
+.caroCarrousel > a:hover,
+.caroCarrousel > a:focus {
+  color: var(--caroCarrouselAccentColor);
+}
