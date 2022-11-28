@@ -194,6 +194,7 @@ main nav ul li:nth-of-type(1) svg{
 
 
 
+
 /******************/
 /* FOOTER STYLING */
 /******************/
@@ -249,6 +250,7 @@ footer section:nth-last-child(2) button:hover {
 footer section:nth-of-type(6) ul {
   display: grid;
   grid-template-columns: 50% 50%;
+  margin-bottom: 64px;
 }
 
 footer section:nth-of-type(6) li:first-of-type {
