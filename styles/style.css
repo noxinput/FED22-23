@@ -44,10 +44,13 @@ button, summary {
 :root {
     /* startje */
     --color-text:#111;
-    --color-background:#eee;
+    --color-background:#FFF;
     --header-focused: black;
     --header-unfocused:	#717171;
     --link-color: rgb(34, 34, 34);
+    --border-color: #DDDDDD;
+    --nav-unfocused: rgb(176, 176, 176);
+    --nav-focused: rgb(255, 56, 92);
 }
 
 
@@ -83,6 +86,7 @@ body {
 /******************/
 header nav {
   overflow: hidden;
+  background-color: var(--color-background);
 }
 
 header > nav ul{
@@ -92,7 +96,9 @@ header > nav ul{
   -ms-overflow-style: none; /* voor IE */
   scrollbar-width: none; /* voor firefox */
   overscroll-behavior: contain auto;
-  padding: 0 24px 0 24px;
+  padding: 0 24px 20px 24px;
+  border-bottom: 1px solid var(--border-color);
+  margin: 16px 0 0 0;
 }
 
 header > nav ul::-webkit-scrollbar {
@@ -125,6 +131,65 @@ header > nav img {
   margin-bottom: 4px;
 }
 
+header > nav li:nth-of-type(1) a{
+  color: var(--header-focused);
+  border-bottom: 2px solid var(--color-text);
+}
+
+header > nav li:not(:first-child) a:hover{
+  color: var(--header-focused);
+  border-bottom: 2px solid var(--border-color);
+}
+
+
+
+
+
+/********************/
+/* PAGE NAV STYLING */
+/********************/
+main nav {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-width: 100%;
+  background-color: var(--color-background);
+  border-top: 1px solid var(--border-color);
+}
+
+main nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin:  12px 0 12px 0;
+}
+
+main nav ul li {
+  list-style: none;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+main nav ul li a {
+  text-decoration: none;
+  color: var(--header-unfocused);
+  font-size: 10px;
+}
+
+main nav ul li svg {
+  color: var(--nav-unfocused);
+}
+
+main nav ul li:nth-of-type(1) a{
+  color:var(--header-focused)
+}
+
+main nav ul li:nth-of-type(1) svg{
+  color: var(--nav-focused);
+}
 
 
 
@@ -135,7 +200,7 @@ header > nav img {
 footer section {
   text-decoration: none;
   margin: 24px;
-  border-bottom: 1px solid #DDDDDD;
+  border-bottom: 1px solid var(--border-color);
 }
 
 footer ul li {
@@ -223,10 +288,10 @@ section:nth-of-type(2) img {
 
 
 
-  /******************************/
-  /* DE CAROCARROUSEL CONTAINER */
-  /******************************/
-  
+/******************************/
+/* DE CAROCARROUSEL CONTAINER */
+/******************************/
+
 .caroCarrousel {
   /* basis waarden die door de hele carrousel gebruikt worden */
   /* kun je zelf aanpassen */
@@ -292,6 +357,7 @@ section:nth-of-type(2) img {
 .caroCarrousel > ul li > img {
   display: block;
   width: 100%;
+  border-radius: 20px;
 }
 
 
