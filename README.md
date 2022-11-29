@@ -55,29 +55,26 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  -met een screenreader kan je niet de headings selecteren
+  -direct naar inhoud knop is aanwezig
+  -er wordt weinig kleur gebruikt waardoor het accessible is voor mensen met kleurenblindheid
+  -geen mogelijkheid om airbnb host te worden met gebruik van een screenreader
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Tijdens het gebruiken van een screenreader kan je niet via de headings door de hele website heen, je kan alleen door de footer heen navigeren.
+  Dit zou opgelost kunnen worden door alle headings in H1-6 elementen te zetten.
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Je kan goed door de website heen navigeren door gebruik te maken van het toetsenbord. Ook kan er door de kaart heen genavigeerd worden met het toetsenbord.
+  Het zou heel lang duren voordat iemand bij de onderste navigatie komt wat opgelost zou kunnen worden door de navigatie door het aanbod als laatste te selecteren.
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  De grootte van knopjes op de website helpt met het lastig bedienen van de website. Het maakt het lastig om door de afbeeldingen van de huizen te gaan maar dit is opgelost door gebruik van 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Doordat er weinig kleur gebruikt wordt op de website kunnen mensen met kleurenblindheid ook normaal gebruik maken van de website.
+  Er is geen dark mode wat sommige gebruikers kan helpen, dit is dus op te lossen door een dark mode functionaliteit toe te voegen.
 
 </details>
 
@@ -109,26 +106,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  De header maken ging best goed, ik had erg veel moeite met de carroussel werkend maken op mijn site. 
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | idelene        | student 2          | student 3    | student 4        |
+  | Jordy          | Nikki              | Lars S       | student 4        |
   | ---            | ---                | ---          | ---              |
-  | vraag over dit | en dit             | en ik dit    | en dan ik dat    |
-  | en over dat    | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | hoe kan ik mij | en dit             | en ik dit    | en dan ik dat    |
+  | carroussel     | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | laten werken   | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  Ik heb de carroussel laten kunnen werken en moet nog een manier vinden om deze te combineren met de informatie die er bij hoort.
+  Over het algemeen gaat het al goed met mijn website.
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - goed onderweg
+  - css netter maken
+  - css targeting probleem waardoor carroussel niet werkt
+  - grid positioning voor de footer
 
 </details>
 
