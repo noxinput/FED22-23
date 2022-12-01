@@ -2,7 +2,32 @@ function createCaroCarrousel(carrouselID) {
 	let carrousel = document.querySelector("#"+carrouselID);
   let carrouselElementsContainer = carrousel.querySelector(":scope > ul");
 	let carrouselElements = carrouselElementsContainer.querySelectorAll("li");
+  let bolletjes = carrousel.querySelectorAll(":scope > nav a");
   let linkButtons = carrousel.querySelectorAll(":scope > a");
+	
+  
+  /****************/
+	/* DE BOLLETJES */
+	/****************/
+  
+  // de bolletjes activeren
+  function iniBolletjes() {
+    for (bolletje of bolletjes) {
+			// elk bolletje laten luisteren naar kliks
+      bolletje.addEventListener("click", function(e){
+				// als er geklikt wordt
+        
+				// de default-actie (de link volgen) niet uitvoeren
+				e.preventDefault();
+
+				// het nieuwe element opzoeken
+				let newElement = carrousel.querySelector(this.hash);
+        
+        // dan naar het element met ID scrollen
+        scrollToElement(newElement);
+      });
+    }
+	}
   
   
   /*****************************/
@@ -31,10 +56,12 @@ function createCaroCarrousel(carrouselID) {
 	/* START POSITIE */
 	/*****************/
   
-	// het eerste element actief maaken
+	// het eerste element en bolletje actief maaken
   function iniStartPosition() {
     // eerste element current maken
     carrouselElements[0].classList.add("current");
+    // eerste bolletje current maken
+		bolletjes[0].classList.add("current");
 		// aan het begin van de container starten
     carrouselElementsContainer.scrollLeft = 0;
   }
@@ -88,6 +115,9 @@ function createCaroCarrousel(carrouselID) {
     
     // nieuwe element current element maken
     updateCurrentElement(newElement);
+
+    // de bolletjes updaten
+    updateBolletjes(newElement);
   }
   
   
@@ -99,11 +129,29 @@ function createCaroCarrousel(carrouselID) {
 		// de class current verwijderen
 		currentElement.classList.remove("current");
 
-		// de class current toevoegen
+		// aan nieuwe element de class current toevoegen
 		newElement.classList.add("current");
 	}
+
+  
+  //////////////////////
+  // update bolletjes //
+  function updateBolletjes(newElement){
+		// het huidige current bolletje opzoeken
+		let currentBolletje = carrousel.querySelector(":scope > nav .current");
+		// de class current verwijderen
+		currentBolletje.classList.remove("current");
+		
+		// het nieuwe bolletje opzoeken
+    let newBolletje = carrousel.querySelector("a[href='#"+newElement.id+"']");
+		// de class current toevoegen
+		newBolletje.classList.add("current");
+  }
+
   
   
+	// de bolletjes activeren
+  iniBolletjes();	
   // de linkbuttons activeren
   iniLinkButtons();	
   // de carrousel bij het begin starten
@@ -118,6 +166,8 @@ function createCaroCarrousel(carrouselID) {
 // nadat de pagina geladen is, de carrousels activeren
 (function() {
   // hier de id gebruiken van de section in de html
-  createCaroCarrousel("justButtons");
+  createCaroCarrousel("kaapstadCaro");
+  createCaroCarrousel("broadCaro");
   //je kunt hier ook meerdere carrousellen activeren
 })();
+  

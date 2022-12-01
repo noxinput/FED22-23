@@ -1,0 +1,225 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+    box-sizing:border-box;  
+  }
+  
+  button, summary {
+      cursor: pointer;
+  }
+  
+
+
+
+
+/****************/
+/* ADDING FONTS */
+/****************/
+@font-face {
+    font-family: 'CerealMedium';
+    src: url('../fonts/Airbnb-Cereal-Medium.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'CerealBold';
+    src: url('../fonts/Airbnb-Cereal-Medium.woff2') format('woff2');
+    font-weight: bolder;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'CerealBook';
+    src: url('../fonts/Airbnb-Cereal-Book.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+
+/******************/
+/* HEADER STYLING */
+/******************/
+header nav {
+    overflow: hidden;
+    background-color: var(--color-background);
+  }
+  
+  header > nav ul{
+    display: flex;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch; /* voor iOS*/
+    -ms-overflow-style: none; /* voor IE */
+    scrollbar-width: none; /* voor firefox */
+    overscroll-behavior: contain auto;
+    padding: 0 24px 20px 24px;
+    border-bottom: 1px solid var(--border-color);
+    margin: 16px 0 0 0;
+  }
+  
+  header > nav ul::-webkit-scrollbar {
+    /* scrollbar zoveel mogelijk verbergen */
+    display: none; /* voor chrome, safari en edge*/
+  }
+  
+  header > nav li{
+    font-size: 12px;
+    list-style-type: none;
+    display: flex;
+    margin-right: 10px;
+  }
+  
+  header > nav a {
+    white-space: nowrap;
+    text-decoration: none;
+    color: var(--header-unfocused);
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+  }
+  
+  header > nav a:focus {
+    color: var(--header-focused);
+  }
+  
+  header > nav img {
+    max-width: 26px;
+    margin-bottom: 4px;
+  }
+  
+  header > nav li:nth-of-type(1) a{
+    color: var(--header-focused);
+    border-bottom: 2px solid var(--color-text);
+  }
+  
+  header > nav li:not(:first-child) a:hover{
+    color: var(--header-focused);
+    border-bottom: 2px solid var(--border-color);
+  }
+
+
+
+
+
+
+/********************/
+/* PAGE NAV STYLING */
+/********************/
+main > nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    background-color: var(--color-background);
+    border-top: 1px solid var(--border-color);
+  }
+  
+  main > nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin:  12px 0 12px 0;
+    padding: 0;
+  }
+  
+  main > nav ul li {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  main > nav ul li a {
+    text-decoration: none;
+    color: var(--header-unfocused);
+    font-size: 10px;
+  }
+  
+  main > nav ul li svg {
+    color: var(--nav-unfocused);
+  }
+  
+  main > nav ul li:nth-of-type(1) a{
+    color:var(--header-focused)
+  }
+  
+  main > nav ul li:nth-of-type(1) svg{
+    color: var(--nav-focused);
+  }
+  
+  
+  
+  
+/******************/
+/* FOOTER STYLING */
+/******************/
+footer section {
+    text-decoration: none;
+    margin: 24px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  footer ul {
+    padding: 0;
+  }
+
+  footer ul li {
+    list-style-type: none;
+    font-size: 14px;
+    font-family: CerealBook;
+    margin-top: 12px;
+  }
+  
+  footer section a {
+    text-decoration: none;
+    color: var(--link-color);
+  }
+  
+  footer section a:hover {
+    text-decoration: underline;
+  }
+  
+  footer strong {
+    font-size: 14px;
+  }
+  
+  /* position and style buttons */
+  footer section:nth-last-child(2) {
+    border: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  footer section:nth-last-child(2) button{
+    background: none;
+    border: none;
+    font-family: CerealMedium;
+    font-size: 14px;
+  }
+  
+  footer section:nth-last-child(2) button:hover {
+    text-decoration: underline;
+  }
+  
+  /* path {
+    fill:red;
+  } */
+  
+  /* positioning for last footer items */
+  footer section:nth-of-type(6) ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 64px;
+  }
+  
+  footer section:nth-of-type(6) li:first-of-type {
+    grid-column: 1/3;
+  }
+
+
+  
