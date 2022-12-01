@@ -157,10 +157,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - margin voor carroussel moest op de section en niet de img's
+  - svg bevat heel vele troep waardoor mijn css niet werkte
 
 </details>
 

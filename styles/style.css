@@ -77,8 +77,8 @@ main > section > ul li {
 
 main section > ul li > svg {
   position: absolute;
-  top:1em;
-  right:1em;
+  top:2em;
+  right:2em;
   z-index:100;
 }
 
@@ -144,6 +144,7 @@ section:nth-of-type(2) img {
   position: relative;
   overflow: hidden; /* om de linkbuttons te verbergen */
 	outline:none;
+  margin: 24px;
 }
 
 /* dark mode */
@@ -155,10 +156,11 @@ section:nth-of-type(2) img {
 }
 
 
+
 /************************************/
 /* de carrousel elementen container */
 .caroCarrousel > ul {
-  margin: 24px; padding: 0;
+  margin: 0; padding: 0;
   list-style: none;
 	display: flex;
 	
