@@ -140,17 +140,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Carroussel is uitendelijk goed gelukt, ik stel de widget erg uit omdat ik niet weet hoe erg ik deze ga uitwerken.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Jordy                 | student 2          | student 3    | student 4        |
+  | ---                   | ---                | ---          | ---              |
+  | Inline posititioning  | en dit             | en ik dit    | en dan ik dat    |
+  | met svg icoon.        | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Margin bij de         | ...                | ...          | ...              |
+  | carroussel            |
 
 
   ### Verslag van meeting
