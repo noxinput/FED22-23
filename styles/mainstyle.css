@@ -104,6 +104,34 @@ header nav {
 
 
 
+header section {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  grid-auto-rows: 50px;
+  grid-template-areas:
+    "a b b b b b b c";
+  align-items: center;
+}
+
+header section button {
+  border-radius: 40px;
+}
+
+header section button:first-of-type {
+  grid-area: b;
+  align-items: center;
+  display:flex;
+}
+
+header section button:nth-of-type(2) {
+  grid-area: c;
+}
+
+
+
+
+
 
 /********************/
 /* PAGE NAV STYLING */
