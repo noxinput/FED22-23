@@ -132,6 +132,25 @@ main > section ul {
 }
 
 
+
+@media (min-width:550px){
+  main > section{
+    padding: 0 24px;
+  }
+
+  main > section ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main > section > ul > li {
+    padding: 0;
+  }
+
+}
+
+
+
 /*******************/
 /* SECTION STYLING */
 /*******************/

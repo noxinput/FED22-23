@@ -180,22 +180,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 
+
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  kan goed met muis, duidelijk wat interactief is
+  geen goede focus states bij diverse elementen, zoals buttons en bolletjes, eerste  
 
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen) met parkinson nog prima te doen,  vingers aan elkaar boeit niet
+
+
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen) lastiger met blindhed maar wel te doen, 
 
 </details>
 
