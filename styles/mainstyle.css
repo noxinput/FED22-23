@@ -105,30 +105,44 @@ header nav {
 
 
 header section {
+  padding: 14px 24px 0;
+}
+
+header section > div{
+  background-color: gray;
+  border-radius: 4em;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 10px;
-  grid-auto-rows: 50px;
-  grid-template-areas:
-    "a b b b b b b c";
+  grid-template-columns: 1fr 80% 1fr;
   align-items: center;
+  justify-items: center;
 }
 
-header section button {
-  border-radius: 40px;
+header section > div svg {
+  max-width: 1.2em;
+}
+/* 
+header section div span:first-of-type {
+  grid-column: 2 / span 4;
 }
 
-header section button:first-of-type {
-  grid-area: b;
-  align-items: center;
-  display:flex;
+header section div span:nth-of-type(2) {
+  grid-row: 2 ;
+  grid-column: 2;
 }
 
-header section button:nth-of-type(2) {
-  grid-area: c;
+header section div span:nth-of-type(3) {
+  grid-row: 2 ;
+  grid-column: 3;
 }
 
+header section div span:nth-of-type(4) {
+  grid-row: 2 ;
+  grid-column: 4;
+}
 
+header section div svg:first-of-type {
+  grid-row: 0 / 1;
+} */
 
 
 
