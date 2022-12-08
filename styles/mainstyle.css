@@ -219,6 +219,7 @@ main > nav {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    
   }
   
   main > nav ul li a {

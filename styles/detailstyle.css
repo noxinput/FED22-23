@@ -47,26 +47,26 @@ section {
 }
 
 
-section:not(:first-of-type) {
+main section:not(:first-of-type) {
     margin: 0 24px;
     border-bottom: 1px solid var(--border-color);
 }
 
-section:nth-of-type(1) img {
+main section:nth-of-type(1) img {
     width: 100%;
 }
 
-section:nth-of-type(3) {
+main section:nth-of-type(3) {
     display:flex;
     align-items: center;
 }
 
-section:nth-of-type(3) p:first-of-type{
+main section:nth-of-type(3) p:first-of-type{
     display:flex;
     flex-direction: row;
 }
 
-section:nth-of-type(3) p{
+main section:nth-of-type(3) p{
     margin: 0;
 }
 

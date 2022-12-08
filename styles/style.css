@@ -76,6 +76,7 @@ body {
 
 main section > ul {
   padding: 0;
+  
 }
 
 
@@ -86,6 +87,7 @@ main > section > ul li {
   flex-direction: column-reverse;
   position: relative;
   list-style: none;
+  margin: 12px 24px 0px 24px;
 }
 
 main section > ul li > svg {
@@ -103,7 +105,7 @@ main > section > ul > li > a {
   display: flex;
   flex-direction: column;
   font-family: CerealBook;
-  padding: 12px 24px 24px 24px;
+  padding: 5px;
   color: var(--link-color);
   text-decoration: none;
 }
@@ -135,20 +137,37 @@ main > section ul {
 
 @media (min-width:550px){
   main > section{
-    padding: 0 24px;
+    margin: 0 24px;
   }
 
-  main > section ul {
+  main > section > ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 1.2em;
   }
 
   main > section > ul > li {
     padding: 0;
+    margin: 0;
   }
-
 }
 
+@media (min-width:950px){
+  main > section{
+    margin: 0 24px;
+  }
+
+  main > section > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.2em;
+  }
+
+  main > section > ul > li {
+    padding: 0;
+    margin: 0;
+  }
+}
 
 
 /*******************/
@@ -176,7 +195,7 @@ section:nth-of-type(2) img {
   position: relative;
   overflow: hidden; /* om de linkbuttons te verbergen */
 	outline:none;
-  margin: 12px 24px 0px 24px;
+  margin: 0;
 }
 
 /* dark mode */
@@ -254,7 +273,6 @@ section:nth-of-type(2) img {
   list-style: none;
 	
 	display: flex;
-/* 	flex-wrap:wrap; */
   justify-content: center;
   gap:.1em;
 }
