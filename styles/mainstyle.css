@@ -94,6 +94,11 @@ header section {
 
 header section button {
   border-radius: 3em;
+  outline: none;
+  background-color:var(--color-background);
+  border:none;
+  
+  box-shadow: 0px 5px 10px var(--border-color);
 }
 
 header section button:nth-of-type(1) {
@@ -113,18 +118,40 @@ header section button:nth-of-type(1) p{
 header section button:nth-of-type(1) p{
   overflow:hidden;
   white-space: nowrap;
+  margin: 12px 0 0 0;
+}
+
+header section button:nth-of-type(1) p:last-of-type{
+  margin: 5px 0 12px;
 }
 
 header section button:nth-of-type(1) svg{
-  max-width: 24px;
+  width: 16px;
   grid-row: 1/ span 2;
 }
 
 header section button:nth-of-type(2) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  clip-path: inset(0px -15px -15px 0px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+header section button:nth-of-type(2) div{
+  border: solid 1px var(--border-color);
+  border-radius: 100%;
+  padding: 0.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header section button:nth-of-type(2) svg{
+  border-radius: 50%;
+  width: 16px;
+}
 
 
 
