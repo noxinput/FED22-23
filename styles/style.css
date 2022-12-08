@@ -6,9 +6,36 @@
 }
 
 button, summary {
-    cursor: pointer;
+  cursor: pointer;
 }
 
+
+
+
+
+/****************/
+/* ADDING FONTS */
+/****************/
+@font-face {
+  font-family: 'CerealMedium';
+  src: url('../fonts/Airbnb-Cereal-Medium.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CerealBold';
+  src: url('../fonts/Airbnb-Cereal-Medium.woff2') format('woff2');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CerealBook';
+  src: url('../fonts/Airbnb-Cereal-Book.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 
@@ -18,15 +45,15 @@ button, summary {
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-    /* startje */
-    --color-text:#111;
-    --color-background:#FFF;
-    --header-focused: black;
-    --header-unfocused:	#717171;
-    --link-color: rgb(34, 34, 34);
-    --border-color: #DDDDDD;
-    --nav-unfocused: rgb(176, 176, 176);
-    --nav-focused: rgb(255, 56, 92);
+  /* startje */
+  --color-text:#111;
+  --color-background:#FFF;
+  --header-focused: black;
+  --header-unfocused:	#717171;
+  --link-color: rgb(34, 34, 34);
+  --border-color: #DDDDDD;
+  --nav-unfocused: rgb(176, 176, 176);
+  --nav-focused: rgb(255, 56, 92);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -81,300 +108,66 @@ main section > ul {
 
 
 
-/* used to put image above the text */
-main > section > ul li {
-  display: flex;
-  flex-direction: column-reverse;
-  position: relative;
-  list-style: none;
-  margin: 12px 24px 0px 24px;
-}
 
-main section > ul li > svg {
-  position: absolute;
-  top:2em;
-  right:2em;
-  z-index:100;
-}
 
-main section > ul li > path {
-  stroke: white 1px; 
-}
-
-main > section > ul > li > a {
-  display: flex;
-  flex-direction: column;
-  font-family: CerealBook;
-  padding: 5px;
-  color: var(--link-color);
+/******************/
+/* FOOTER STYLING */
+/******************/
+footer section {
   text-decoration: none;
+  margin: 24px;
+  border-bottom: 1px solid var(--border-color);
 }
 
-main > section > ul li > a * {
-  margin: 0;
-  font-size: 15px;
+footer ul {
+  padding: 0;
 }
 
-main > section > ul > li > a > p:first-of-type {
-  position: absolute;
-  right: 24px;
-  flex-direction: row;
+footer ul li {
+  list-style-type: none;
+  font-size: 14px;
+  font-family: CerealBook;
+  margin-top: 12px;
+}
+
+footer section a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+footer section a:hover {
+  text-decoration: underline;
+}
+
+footer strong {
+  font-size: 14px;
+}
+
+/* position and style buttons */
+footer section:nth-last-child(2) {
+  border: none;
   display: flex;
   align-items: center;
-  gap: 4px;
 }
 
-main > section > ul > li > a > p:last-of-type {
-  margin-top: 4px;
+footer section:nth-last-child(2) button{
+  background: none;
+  border: none;
+  font-family: CerealMedium;
+  font-size: 14px;
 }
 
-main > section ul {
+footer section:nth-last-child(2) button:hover {
+  text-decoration: underline;
+}
+
+/* positioning for last footer items */
+footer section:nth-of-type(6) ul {
   display: grid;
-  margin: 0;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 64px;
 }
 
-
-
-@media (min-width:550px){
-  main > section{
-    margin: 0 24px;
-  }
-
-  main > section > ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.2em;
-  }
-
-  main > section > ul > li {
-    padding: 0;
-    margin: 0;
-  }
-}
-
-@media (min-width:950px){
-  main > section{
-    margin: 0 24px;
-  }
-
-  main > section > ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.2em;
-  }
-
-  main > section > ul > li {
-    padding: 0;
-    margin: 0;
-  }
-}
-
-
-/*******************/
-/* SECTION STYLING */
-/*******************/
-section:nth-of-type(2) img {
-  max-width: 260px;
-}
-
-
-
-
-
-/******************************/
-/* DE CAROCARROUSEL CONTAINER */
-/******************************/
-
-.caroCarrousel {
-	/* basis waarden die door de hele carrousel gebruikt worden */
-	/* kun je zelf aanpassen */
-	--caroCarrouselMainColor:#000;
-  --caroCarrouselAccentColor:#222;
-	--caroCarrouselShadeColor:rgba(255, 255, 255, 0.9);
-
-  position: relative;
-  overflow: hidden; /* om de linkbuttons te verbergen */
-	outline:none;
-  margin: 0;
-}
-
-/* dark mode */
-@media (prefers-color-scheme: dark) {
-  .caroCarrousel {
-    --caroCarrouselMainColor:#000;
-    --caroCarrouselShadeColor:rgba(255, 255, 255, 0.9);
-  }
-}
-
-
-
-/************************************/
-/* de carrousel elementen container */
-.caroCarrousel > ul {
-  margin: 0; padding: 0;
-  list-style: none;
-	display: flex;
-	
-	/* handmatig scrollen is mogelijk */
-	overflow: hidden;
-	
-	/* snappen als er gescrolled wordt - andere helft bij li */
-  scroll-snap-type: inline mandatory;
-  
-  /* smooth scrollen */
-	scroll-behavior: smooth;
-  
-  /* scrollbar zoveel mogelijk verbergen */
-  -webkit-overflow-scrolling: touch; /* voor iOS*/
-  -ms-overflow-style: none; /* voor IE */
-	scrollbar-width: none; /* voor firefox */
-}
-
-.caroCarrousel > ul::-webkit-scrollbar {
-  /* scrollbar zoveel mogelijk verbergen */
-  display: none; /* voor chrome, safari en edge*/
-}
-
-
-/**************************/
-/* de carrousel elementen */
-.caroCarrousel > ul li {
-  flex-basis: 100%;
-  flex-shrink: 0;
-  /* snappen als er gescrolled wordt - andere helft bij ul */
-	scroll-snap-align:center;
-}
-
-
-/**********************************/
-/* de carrousel elementen content */
-
-/* de stijlen voor jouw content hier */
-.caroCarrousel > ul li > img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;;
-  border-radius: 20px;
-}
-
-
-/****************/
-/* DE BOLLETJES */
-/****************/
-
-/* de bolletjes container */
-.caroCarrousel nav ul {
-  position: absolute;
-	left: 7em; right: 7em;
-	bottom: 0;
-	margin: 0;
-  padding: 0 0 .5em;
-  list-style: none;
-	
-	display: flex;
-  justify-content: center;
-  gap:.1em;
-}
-
-/* een bolletje container */
-.caroCarrousel > nav li {
-	flex-basis: 1.2em;
-	aspect-ratio: 1/1;
-}
-
-/* de bolletjes */
-.caroCarrousel > nav a {
-  display: block;
-  width:70%;
-  height:70%;
-  text-decoration: none;
-	color: #fff;
-  background-color: #888;
-	border-radius: 100%;
-  outline: none;
-	box-shadow: inset 0 0 0 1px black;
-  
-  transition: 0.1s;
-}
-
-.caroCarrousel > nav a:hover,
-.caroCarrousel > nav a:focus {
-  color: var(--caroCarrouselAccentColor);
-}
-
-.caroCarrousel > nav a.current {
-  background-color: currentColor;
-}
-
-
-/****************************/
-/* PREV EN NEXT LINKBUTTONS */
-/****************************/
-.caroCarrousel > a {
-  position: absolute;
-  width: 2em;
-  aspect-ratio:1/1;
-	top: calc(50% - 1.5em);
-  
-  color: var(--caroCarrouselMainColor);
-  background-color: var(--caroCarrouselShadeColor);
-  outline: none;
-	box-shadow: 1px 0px 5px 0px currentColor;
-	border-radius: 100%;
-
-  display:grid;
-  place-items:center;
-  
-  transition: 0.1s;
-}
-
-/* initieel staan de links "buiten beeld" */
-.caroCarrousel > a[href="previous"] {
-  left:-3.5em;
-}
-.caroCarrousel > a[href="next"] {
-  right: -3.5em;
-}
-
-/* bij hover en focus schuiven de links in beeld */
-.caroCarrousel:hover > a[href="previous"],
-.caroCarrousel:focus-within > a[href="previous"] {
-  left:.5em;
-}
-.caroCarrousel:hover > a[href="next"],
-.caroCarrousel:focus-within > a[href="next"] {
-  right:.5em;
-}
-
-/* prev en next linkbuttons pijltjes */
-/* .caroCarrousel > a::before,
-.caroCarrousel > a::after {
-  content: "";
-  position: absolute;
-  width: 1em; height: 4px;
-  background-color: currentColor;
-} */
-
-.caroCarrousel > a[href=previous]::before {
-	transform-origin: 2px center;
-	transform: translateY(0) rotate(45deg);
-}
-.caroCarrousel > a[href=previous]::after {
-	transform-origin: 2px center;
-	transform: translateY(0) rotate(-45deg);
-}
-
-.caroCarrousel > a[href=next]::before {
-	transform-origin: calc(100% - 2px) center;
-	transform: translateY(0) rotate(45deg);
-}
-.caroCarrousel > a[href=next]::after {
-	transform-origin: calc(100% - 2px) center;
-	transform: translateY(0) rotate(-45deg);
-}
-
-.caroCarrousel > a:hover,
-.caroCarrousel > a:focus {
-  color: var(--caroCarrouselAccentColor);
+footer section:nth-of-type(6) li:first-of-type {
+  grid-column: 1/3;
 }
