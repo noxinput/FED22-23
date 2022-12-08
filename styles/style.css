@@ -56,9 +56,9 @@ button, summary {
   --nav-focused: rgb(255, 56, 92);
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --color-text:#fff;
+    --color-text:#ccc;
     --color-background:#353535;
     --header-focused: white;
     --header-unfocused:	#fff;
@@ -67,7 +67,11 @@ button, summary {
     --nav-unfocused: rgb(176, 176, 176);
     --nav-focused: rgb(255, 56, 92);
   }
-} */
+
+  header nav img {
+    filter: invert(80%);
+  }
+}
 
 
 
