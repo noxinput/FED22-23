@@ -380,6 +380,7 @@ footer section:nth-last-child(2) button{
   border: none;
   font-family: CerealMedium;
   font-size: 14px;
+  color:var(--color-text)
 }
 
 footer section:nth-last-child(2) button:hover {
