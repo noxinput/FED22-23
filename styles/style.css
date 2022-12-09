@@ -1,11 +1,14 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
-button, summary {
+button,
+summary {
   cursor: pointer;
 }
 
@@ -46,10 +49,10 @@ button, summary {
 /*********************/
 :root {
   /* startje */
-  --color-text:#111;
-  --color-background:#FFF;
+  --color-text: #111;
+  --color-background: #FFF;
   --header-focused: black;
-  --header-unfocused:	#717171;
+  --header-unfocused: #717171;
   --link-color: rgb(34, 34, 34);
   --border-color: #DDDDDD;
   --nav-unfocused: rgb(176, 176, 176);
@@ -58,10 +61,10 @@ button, summary {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-text:#ccc;
-    --color-background:#353535;
+    --color-text: #ccc;
+    --color-background: #353535;
     --header-focused: white;
-    --header-unfocused:	#fff;
+    --header-unfocused: #fff;
     --link-color: #fff;
     --border-color: #DDDDDD;
     --nav-unfocused: rgb(176, 176, 176);
@@ -71,13 +74,13 @@ button, summary {
   header nav img {
     filter: invert(80%);
   }
-  
+
   header section button {
     box-shadow: 0px 0px 3px var(--border-color);
   }
 }
 
-@media (prefers-color-scheme: light){
+@media (prefers-color-scheme: light) {
   header section button {
     box-shadow: 0px 5px 10px var(--border-color);
   }
@@ -99,8 +102,8 @@ button, summary {
 }
 
 body {
-  color:var(--color-text);
-  background-color:var(--color-background);
+  color: var(--color-text);
+  background-color: var(--color-background);
   font-family: CerealMedium;
   margin: 0;
 }
@@ -113,18 +116,18 @@ body {
 /********************/
 
 
-body > button {
+body>button {
   position: absolute;
   left: -99999em;
 
-  border:solid 1px var(--nav-focused);
-  padding:1em;
-  outline:none;
-  color:var(--color-text);
-  background-color:var(--color-background);
+  border: solid 1px var(--nav-focused);
+  padding: 1em;
+  outline: none;
+  color: var(--color-text);
+  background-color: var(--color-background);
 }
 
-body > button:focus {
+body>button:focus {
   left: 0;
 }
 
@@ -136,9 +139,9 @@ body > button:focus {
 /* MAIN STYLING */
 /****************/
 
-main section > ul {
+main section>ul {
   padding: 0;
-  
+
 }
 
 
@@ -185,7 +188,7 @@ footer section:nth-last-child(2) {
   align-items: center;
 }
 
-footer section:nth-last-child(2) button{
+footer section:nth-last-child(2) button {
   background: none;
   border: none;
   font-family: CerealMedium;

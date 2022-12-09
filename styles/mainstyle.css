@@ -3,14 +3,17 @@
 /**************/
 
 
-*, *::after, *::before {
-    box-sizing:border-box;  
-  }
-  
-  button, summary {
-      cursor: pointer;
-  }
-  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+button,
+summary {
+  cursor: pointer;
+}
+
 
 
 
@@ -25,31 +28,35 @@ header nav {
   background-color: var(--color-background);
 }
 
-header > nav ul{
+header>nav ul {
   display: flex;
   overflow-x: scroll;
-  -webkit-overflow-scrolling: touch; /* voor iOS*/
-  -ms-overflow-style: none; /* voor IE */
-  scrollbar-width: none; /* voor firefox */
+  -webkit-overflow-scrolling: touch;
+  /* voor iOS*/
+  -ms-overflow-style: none;
+  /* voor IE */
+  scrollbar-width: none;
+  /* voor firefox */
   overscroll-behavior: contain auto;
   padding: 0 24px 20px 24px;
   border-bottom: 1px solid var(--border-color);
   margin: 16px 0 0 0;
 }
 
-header > nav ul::-webkit-scrollbar {
+header>nav ul::-webkit-scrollbar {
   /* scrollbar zoveel mogelijk verbergen */
-  display: none; /* voor chrome, safari en edge*/
+  display: none;
+  /* voor chrome, safari en edge*/
 }
 
-header > nav li{
+header>nav li {
   font-size: 12px;
   list-style-type: none;
   display: flex;
   margin-right: 10px;
 }
 
-header > nav a {
+header>nav a {
   white-space: nowrap;
   text-decoration: none;
   color: var(--header-unfocused);
@@ -58,21 +65,21 @@ header > nav a {
   align-items: center;
 }
 
-header > nav a:focus {
+header>nav a:focus {
   color: var(--header-focused);
 }
 
-header > nav img {
+header>nav img {
   max-width: 26px;
   margin-bottom: 4px;
 }
 
-header > nav li:nth-of-type(1) a{
+header>nav li:nth-of-type(1) a {
   color: var(--header-focused);
   border-bottom: 2px solid var(--color-text);
 }
 
-header > nav li:not(:first-child) a:hover{
+header>nav li:not(:first-child) a:hover {
   color: var(--header-focused);
   border-bottom: 2px solid var(--border-color);
 }
@@ -95,11 +102,11 @@ header section {
 header section button {
   border-radius: 3em;
   outline: none;
-  background-color:var(--color-background);
-  border:none;
+  background-color: var(--color-background);
+  border: none;
 
   color: var(--color-text);
-  
+
 
 }
 
@@ -112,22 +119,22 @@ header section button:nth-of-type(1) {
   border-bottom-right-radius: 0;
 }
 
-header section button:nth-of-type(1) p{
+header section button:nth-of-type(1) p {
   justify-self: start;
   margin: 0.5em;
 }
 
-header section button:nth-of-type(1) p{
-  overflow:hidden;
+header section button:nth-of-type(1) p {
+  overflow: hidden;
   white-space: nowrap;
   margin: 12px 0 0 0;
 }
 
-header section button:nth-of-type(1) p:last-of-type{
+header section button:nth-of-type(1) p:last-of-type {
   margin: 5px 0 12px;
 }
 
-header section button:nth-of-type(1) svg{
+header section button:nth-of-type(1) svg {
   width: 16px;
   grid-row: 1/ span 2;
 }
@@ -141,7 +148,7 @@ header section button:nth-of-type(2) {
   align-items: center;
 }
 
-header section button:nth-of-type(2) div{
+header section button:nth-of-type(2) div {
   border: solid 1px var(--border-color);
   border-radius: 100%;
   padding: 0.8em;
@@ -150,7 +157,7 @@ header section button:nth-of-type(2) div{
   align-items: center;
 }
 
-header section button:nth-of-type(2) svg{
+header section button:nth-of-type(2) svg {
   border-radius: 50%;
   width: 16px;
 }
@@ -166,7 +173,7 @@ header section button svg path {
 /********************/
 
 
-main > nav {
+main>nav {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -177,15 +184,15 @@ main > nav {
   z-index: 200;
 }
 
-main > nav ul {
+main>nav ul {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin:  12px 0 12px 0;
+  margin: 12px 0 12px 0;
   padding: 0;
 }
 
-main > nav ul li {
+main>nav ul li {
   list-style: none;
   align-items: center;
   display: flex;
@@ -193,21 +200,21 @@ main > nav ul li {
   gap: 5px;
 }
 
-main > nav ul li a {
+main>nav ul li a {
   text-decoration: none;
   color: var(--header-unfocused);
   font-size: 10px;
 }
 
-main > nav ul li svg {
+main>nav ul li svg {
   color: var(--nav-unfocused);
 }
 
-main > nav ul li:nth-of-type(1) a{
-  color:var(--header-focused)
+main>nav ul li:nth-of-type(1) a {
+  color: var(--header-focused)
 }
 
-main > nav ul li:nth-of-type(1) svg{
+main>nav ul li:nth-of-type(1) svg {
   color: var(--nav-focused);
 }
 
@@ -221,7 +228,7 @@ main > nav ul li:nth-of-type(1) svg{
 
 
 /* used to put image above the text */
-main > section > ul li {
+main>section>ul li {
   display: flex;
   flex-direction: column-reverse;
   position: relative;
@@ -229,18 +236,18 @@ main > section > ul li {
   margin: 12px 24px 0px 24px;
 }
 
-main section > ul li > svg {
+main section>ul li>svg {
   position: absolute;
-  top:2em;
-  right:2em;
-  z-index:100;
+  top: 2em;
+  right: 2em;
+  z-index: 100;
 }
 
-main section > ul li > path {
-  stroke: white 1px; 
+main section>ul li>path {
+  stroke: white 1px;
 }
 
-main > section > ul > li > a {
+main>section>ul>li>a {
   display: flex;
   flex-direction: column;
   font-family: CerealBook;
@@ -249,16 +256,16 @@ main > section > ul > li > a {
   text-decoration: none;
 }
 
-main > section > ul > li > a h3{
+main>section>ul>li>a h3 {
   font-family: CerealBold;
 }
 
-main > section > ul li > a * {
+main>section>ul li>a * {
   margin: 0;
   font-size: 15px;
 }
 
-main > section > ul > li > a > p:first-of-type {
+main>section>ul>li>a>p:first-of-type {
   position: absolute;
   right: 24px;
   flex-direction: row;
@@ -267,13 +274,13 @@ main > section > ul > li > a > p:first-of-type {
   gap: 4px;
 }
 
-main > section > ul > li > a > p:last-of-type {
+main>section>ul>li>a>p:last-of-type {
   margin-top: 4px;
 }
 
-main > section > ul > li > a > p strong {
+main>section>ul>li>a>p strong {
   font-family: CerealBold;
-} 
+}
 
 
 
@@ -284,35 +291,35 @@ main > section > ul > li > a > p strong {
 /**************************/
 
 
-@media (min-width:550px){
-  main > section{
+@media (min-width:550px) {
+  main>section {
     margin: 0 24px;
   }
 
-  main > section > ul {
+  main>section>ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.2em;
   }
 
-  main > section > ul > li {
+  main>section>ul>li {
     padding: 0;
     margin: 0;
   }
 }
 
-@media (min-width:950px){
-  main > section{
+@media (min-width:950px) {
+  main>section {
     margin: 0 24px;
   }
 
-  main > section > ul {
+  main>section>ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.2em;
   }
 
-  main > section > ul > li {
+  main>section>ul>li {
     padding: 0;
     margin: 0;
   }
@@ -375,21 +382,17 @@ footer section:nth-last-child(2) {
   align-items: center;
 }
 
-footer section:nth-last-child(2) button{
+footer section:nth-last-child(2) button {
   background: none;
   border: none;
   font-family: CerealMedium;
   font-size: 14px;
-  color:var(--color-text)
+  color: var(--color-text)
 }
 
 footer section:nth-last-child(2) button:hover {
   text-decoration: underline;
 }
-
-/* path {
-  fill:red;
-} */
 
 /* positioning for last footer items */
 footer section:nth-of-type(6) ul {
@@ -414,21 +417,22 @@ footer section:nth-of-type(6) li:first-of-type {
 .caroCarrousel {
   /* basis waarden die door de hele carrousel gebruikt worden */
   /* kun je zelf aanpassen */
-  --caroCarrouselMainColor:#000;
-  --caroCarrouselAccentColor:#222;
-  --caroCarrouselShadeColor:rgba(255, 255, 255, 0.9);
+  --caroCarrouselMainColor: #000;
+  --caroCarrouselAccentColor: #222;
+  --caroCarrouselShadeColor: rgba(255, 255, 255, 0.9);
 
   position: relative;
-  overflow: hidden; /* om de linkbuttons te verbergen */
-  outline:none;
+  overflow: hidden;
+  /* om de linkbuttons te verbergen */
+  outline: none;
   margin: 0;
 }
 
 /* dark mode */
 @media (prefers-color-scheme: dark) {
   .caroCarrousel {
-    --caroCarrouselMainColor:#000;
-    --caroCarrouselShadeColor:rgba(255, 255, 255, 0.9);
+    --caroCarrouselMainColor: #000;
+    --caroCarrouselShadeColor: rgba(255, 255, 255, 0.9);
   }
 }
 
@@ -436,39 +440,44 @@ footer section:nth-of-type(6) li:first-of-type {
 
 /************************************/
 /* de carrousel elementen container */
-.caroCarrousel > ul {
-  margin: 0; padding: 0;
+.caroCarrousel>ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
-  
+
   /* handmatig scrollen is mogelijk */
   overflow: hidden;
-  
+
   /* snappen als er gescrolled wordt - andere helft bij li */
   scroll-snap-type: inline mandatory;
-  
+
   /* smooth scrollen */
   scroll-behavior: smooth;
-  
+
   /* scrollbar zoveel mogelijk verbergen */
-  -webkit-overflow-scrolling: touch; /* voor iOS*/
-  -ms-overflow-style: none; /* voor IE */
-  scrollbar-width: none; /* voor firefox */
+  -webkit-overflow-scrolling: touch;
+  /* voor iOS*/
+  -ms-overflow-style: none;
+  /* voor IE */
+  scrollbar-width: none;
+  /* voor firefox */
 }
 
-.caroCarrousel > ul::-webkit-scrollbar {
+.caroCarrousel>ul::-webkit-scrollbar {
   /* scrollbar zoveel mogelijk verbergen */
-  display: none; /* voor chrome, safari en edge*/
+  display: none;
+  /* voor chrome, safari en edge*/
 }
 
 
 /**************************/
 /* de carrousel elementen */
-.caroCarrousel > ul li {
+.caroCarrousel>ul li {
   flex-basis: 100%;
   flex-shrink: 0;
   /* snappen als er gescrolled wordt - andere helft bij ul */
-  scroll-snap-align:center;
+  scroll-snap-align: center;
 }
 
 
@@ -476,11 +485,12 @@ footer section:nth-of-type(6) li:first-of-type {
 /* de carrousel elementen content */
 
 /* de stijlen voor jouw content hier */
-.caroCarrousel > ul li > img {
+.caroCarrousel>ul li>img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;;
+  object-fit: cover;
+  ;
   border-radius: 20px;
 }
 
@@ -492,44 +502,45 @@ footer section:nth-of-type(6) li:first-of-type {
 /* de bolletjes container */
 .caroCarrousel nav ul {
   position: absolute;
-  left: 7em; right: 7em;
+  left: 7em;
+  right: 7em;
   bottom: 0;
   margin: 0;
   padding: 0 0 .5em;
   list-style: none;
-  
+
   display: flex;
   justify-content: center;
-  gap:.1em;
+  gap: .1em;
 }
 
 /* een bolletje container */
-.caroCarrousel > nav li {
+.caroCarrousel>nav li {
   flex-basis: 1.2em;
   aspect-ratio: 1/1;
 }
 
 /* de bolletjes */
-.caroCarrousel > nav a {
+.caroCarrousel>nav a {
   display: block;
-  width:70%;
-  height:70%;
+  width: 70%;
+  height: 70%;
   text-decoration: none;
   color: #fff;
   background-color: #888;
   border-radius: 100%;
   outline: none;
   box-shadow: inset 0 0 0 1px black;
-  
+
   transition: 0.1s;
 }
 
-.caroCarrousel > nav a:hover,
-.caroCarrousel > nav a:focus {
+.caroCarrousel>nav a:hover,
+.caroCarrousel>nav a:focus {
   color: var(--caroCarrouselAccentColor);
 }
 
-.caroCarrousel > nav a.current {
+.caroCarrousel>nav a.current {
   background-color: currentColor;
 }
 
@@ -537,61 +548,65 @@ footer section:nth-of-type(6) li:first-of-type {
 /****************************/
 /* PREV EN NEXT LINKBUTTONS */
 /****************************/
-.caroCarrousel > a {
+.caroCarrousel>a {
   position: absolute;
   width: 2em;
-  aspect-ratio:1/1;
+  aspect-ratio: 1/1;
   top: calc(50% - 1.5em);
-  
+
   color: var(--caroCarrouselMainColor);
   background-color: var(--caroCarrouselShadeColor);
   outline: none;
   box-shadow: 1px 0px 5px 0px currentColor;
   border-radius: 100%;
 
-  display:grid;
-  place-items:center;
-  
+  display: grid;
+  place-items: center;
+
   transition: 0.1s;
 }
 
 /* initieel staan de links "buiten beeld" */
-.caroCarrousel > a[href="previous"] {
-  left:-3.5em;
+.caroCarrousel>a[href="previous"] {
+  left: -3.5em;
 }
-.caroCarrousel > a[href="next"] {
+
+.caroCarrousel>a[href="next"] {
   right: -3.5em;
 }
 
 /* bij hover en focus schuiven de links in beeld */
-.caroCarrousel:hover > a[href="previous"],
-.caroCarrousel:focus-within > a[href="previous"] {
-  left:.5em;
-}
-.caroCarrousel:hover > a[href="next"],
-.caroCarrousel:focus-within > a[href="next"] {
-  right:.5em;
+.caroCarrousel:hover>a[href="previous"],
+.caroCarrousel:focus-within>a[href="previous"] {
+  left: .5em;
 }
 
-.caroCarrousel > a[href=previous]::before {
+.caroCarrousel:hover>a[href="next"],
+.caroCarrousel:focus-within>a[href="next"] {
+  right: .5em;
+}
+
+.caroCarrousel>a[href=previous]::before {
   transform-origin: 2px center;
   transform: translateY(0) rotate(45deg);
 }
-.caroCarrousel > a[href=previous]::after {
+
+.caroCarrousel>a[href=previous]::after {
   transform-origin: 2px center;
   transform: translateY(0) rotate(-45deg);
 }
 
-.caroCarrousel > a[href=next]::before {
+.caroCarrousel>a[href=next]::before {
   transform-origin: calc(100% - 2px) center;
   transform: translateY(0) rotate(45deg);
 }
-.caroCarrousel > a[href=next]::after {
+
+.caroCarrousel>a[href=next]::after {
   transform-origin: calc(100% - 2px) center;
   transform: translateY(0) rotate(-45deg);
 }
 
-.caroCarrousel > a:hover,
-.caroCarrousel > a:focus {
+.caroCarrousel>a:hover,
+.caroCarrousel>a:focus {
   color: var(--caroCarrouselAccentColor);
 }
