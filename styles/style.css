@@ -71,9 +71,17 @@ button, summary {
   header nav img {
     filter: invert(80%);
   }
+  
+  header section button {
+    box-shadow: 0px 0px 3px var(--border-color);
+  }
 }
 
-
+@media (prefers-color-scheme: light){
+  header section button {
+    box-shadow: 0px 5px 10px var(--border-color);
+  }
+}
 
 
 

@@ -100,7 +100,7 @@ header section button {
 
   color: var(--color-text);
   
-  box-shadow: 0px 5px 10px var(--border-color);
+
 }
 
 header section button:nth-of-type(1) {
