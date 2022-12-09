@@ -132,7 +132,19 @@ body>button:focus {
 }
 
 
+button:focus {
+  border: solid 1px var(--nav-focused);
+  outline: none;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
 
+a:focus {
+  border: solid 1px var(--nav-focused);
+  outline: none;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
 
 
 /****************/
@@ -141,7 +153,6 @@ body>button:focus {
 
 main section>ul {
   padding: 0;
-
 }
 
 
@@ -193,6 +204,13 @@ footer section:nth-last-child(2) button {
   border: none;
   font-family: CerealMedium;
   font-size: 14px;
+}
+
+footer section:nth-last-child(2) button:focus {
+  border: solid 1px var(--nav-focused);
+  outline: none;
+  color: var(--color-text);
+  background-color: var(--color-background);
 }
 
 footer section:nth-last-child(2) button:hover {
