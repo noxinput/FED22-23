@@ -13,7 +13,9 @@ summary {
 }
 
 
-
+body {
+  font-family: CerealBook;
+}
 
 /**********/
 /* HEADER */
@@ -40,6 +42,13 @@ header a {
   left: 24px;
 }
 
+header button,
+header a {
+  background: var(--bolletjes-color);
+  border-radius: 50%;
+  padding: 10px;
+}
+
 
 
 /*****************/
@@ -51,13 +60,45 @@ main section:not(:first-of-type) {
   border-bottom: 1px solid var(--border-color);
 }
 
+
+
+
+
+/*****************/
+/*SECTION 1 STYLING*/
+/*****************/
+
+
 main section:nth-of-type(1) img {
   width: 100%;
+  /* position: absolute;
+  top: 0;
+  z-index: -100; */
 }
+
+
+/*****************/
+/*SECTION 2 STYLING*/
+/*****************/
+
+
+main section:nth-of-type(2) {
+  border-bottom: none;
+}
+
+
+
+
+
+/*****************/
+/*SECTION 3 STYLING*/
+/*****************/
+
 
 main section:nth-of-type(3) {
   display: flex;
   align-items: center;
+  border-bottom: none;
 }
 
 main section:nth-of-type(3) p:first-of-type {
@@ -69,6 +110,232 @@ main section:nth-of-type(3) p {
   margin: 0;
 }
 
-main>button {
-  margin: 0 24px;
+
+
+
+
+/*****************/
+/*SECTION 4 STYLING*/
+/*****************/
+
+
+main section:nth-of-type(4) button{
+  margin:0.5em 0 2em 0;
+  outline: 0;
+  text-decoration: underline;
+  border: none;
+  background: none;
+  color: var(--text-color);
+  padding: 0;
+  font-family: CerealMedium;
+}
+
+
+
+
+
+/*****************/
+/*SECTION 5 STYLING*/
+/*****************/
+
+
+main section:nth-of-type(5){
+  display: grid;
+  grid-template-columns: 80% 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+
+
+
+
+/*****************/
+/*SECTION 6 STYLING*/
+/*****************/
+
+
+main section:nth-of-type(6){
+  display: grid;
+  grid-template-columns: 80% 1fr;
+  grid-template-rows: 1fr 40%;
+}
+
+main section:nth-of-type(6) img{
+  max-width: 4em;
+  border-radius: 50%;
+  right: 24px;
+  grid-column: 2;
+  grid-row: 1;
+  margin-top: 24px;
+}
+
+main section:nth-of-type(6) svg {
+  grid-column: 2;
+  grid-row: 1;
+  position: relative;
+  left: 40px;
+  top: 40px;
+}
+
+main section:nth-of-type(6) h2{
+  margin: 20px 0 0 0;
+}
+
+main section:nth-of-type(6) p{
+  grid-column: 1 / span 2;
+}
+
+
+/*****************/
+/*SECTION 7 STYLING*/
+/*****************/
+
+
+main section:nth-of-type(7){
+
+}
+
+
+
+
+
+/*****************/
+/*SECTION 8 STYLING*/
+/*****************/
+
+
+main section:nth-of-type(8) img{
+  max-width: 100%;
+}
+
+
+
+
+
+/*****************/
+/*SECTION 9 STYLING*/
+/*****************/
+
+
+main section:nth-of-type(9){
+
+}
+
+
+
+
+
+/*****************/
+/*SECTION 10 STYLING*/
+/*****************/
+
+
+main section:nth-of-type(10){
+
+}
+
+
+
+
+
+/*****************/
+/*SECTION 11 STYLING*/
+/*****************/
+
+
+main section:nth-of-type(11){
+
+}
+
+
+
+
+
+/*****************/
+/*SECTION 12 STYLING*/
+/*****************/
+
+
+main section:nth-of-type(12){
+
+}
+
+
+
+
+
+/*****************/
+/*SECTION 13 STYLING*/
+/*****************/
+
+
+main section:nth-of-type(13) img{
+  max-width: 100%;
+
+}
+
+
+
+
+
+/*****************/
+/*SECTION 14 STYLING*/
+/*****************/
+
+
+main section:nth-of-type(14){
+
+}
+
+
+
+
+
+/*****************/
+/*SECTION 15 STYLING*/
+/*****************/
+
+
+main section:nth-of-type(15){
+
+}
+
+
+
+
+
+/*****************/
+/*SECTION 16 STYLING*/
+/*****************/
+
+
+main section:nth-of-type(16){
+
+}
+
+
+
+
+
+/*****************/
+/*SECTION 17 STYLING*/
+/*****************/
+
+
+main section:nth-of-type(17){
+
+}
+
+
+
+
+
+/*****************/
+/*SECTION 18 STYLING*/
+/*****************/
+
+
+main section:nth-of-type(18){
+
 }
