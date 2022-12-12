@@ -167,7 +167,10 @@ function createCaroCarrousel(carrouselID) {
 (function() {
   // hier de id gebruiken van de section in de html
   createCaroCarrousel("kaapstadCaro");
-  createCaroCarrousel("broadCaro");
+  createCaroCarrousel("caliCaro");
+  createCaroCarrousel("croaCaro");
+  createCaroCarrousel("georgiaCaro");
+
   //je kunt hier ook meerdere carrousellen activeren
 })();
   

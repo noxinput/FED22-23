@@ -57,6 +57,8 @@ summary {
   --border-color: #DDDDDD;
   --nav-unfocused: rgb(176, 176, 176);
   --nav-focused: rgb(255, 56, 92);
+  --bolletjes-color: white;
+  --bolletjes-unfocused: rgb(141, 141, 141);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -69,6 +71,8 @@ summary {
     --border-color: #DDDDDD;
     --nav-unfocused: rgb(176, 176, 176);
     --nav-focused: rgb(255, 56, 92);
+    --bolletjes-color: rgb(255, 255, 255);
+    --bolletjes-unfocused: rgb(138, 138, 138);
   }
 
   header nav img {

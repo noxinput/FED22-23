@@ -247,6 +247,10 @@ main section>ul li>path {
   stroke: white 1px;
 }
 
+main>section>ul>li>a>h3>abbr {
+  text-decoration: none;
+}
+
 main>section>ul>li>a {
   display: flex;
   flex-direction: column;
@@ -502,11 +506,11 @@ footer section:nth-of-type(6) li:first-of-type {
 /* de bolletjes container */
 .caroCarrousel nav ul {
   position: absolute;
-  left: 7em;
-  right: 7em;
+  left: 1em;
+  right: 1em;
   bottom: 0;
   margin: 0;
-  padding: 0 0 .5em;
+  padding: 0 0 0.5em;
   list-style: none;
 
   display: flex;
@@ -518,16 +522,17 @@ footer section:nth-of-type(6) li:first-of-type {
 .caroCarrousel>nav li {
   flex-basis: 1.2em;
   aspect-ratio: 1/1;
+  margin: 0;
 }
 
 /* de bolletjes */
 .caroCarrousel>nav a {
   display: block;
-  width: 70%;
-  height: 70%;
+  width: 8px;
+  height: 8px;
   text-decoration: none;
-  color: #fff;
-  background-color: #888;
+  color: var(--bolletjes-color);
+  background-color: var(--bolletjes-unfocused);
   border-radius: 100%;
   outline: none;
   box-shadow: inset 0 0 0 1px black;
