@@ -48,9 +48,9 @@ summary {
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-  /* startje */
   --color-text: #111;
   --color-background: #FFF;
+  --color-light-text: rgb(113, 113, 113);
   --header-focused: black;
   --header-unfocused: #717171;
   --link-color: rgb(34, 34, 34);
@@ -65,6 +65,7 @@ summary {
   :root {
     --color-text: #ccc;
     --color-background: #353535;
+    --color-light-text: rgb(170, 170, 170);
     --header-focused: white;
     --header-unfocused: #fff;
     --link-color: #fff;
