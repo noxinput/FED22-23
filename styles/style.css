@@ -59,6 +59,8 @@ summary {
   --nav-focused: rgb(255, 56, 92);
   --bolletjes-color: white;
   --bolletjes-unfocused: rgb(141, 141, 141);
+  --footer-color: rgb(247, 247, 247);
+  --button-gradient: radial-gradient(circle at center, #FF385C 0%, #E61E4D 27.5%, #E31C5F 40%, #D70466 57.5%, #BD1E59 75%, #BD1E59 100% );
 }
 
 @media (prefers-color-scheme: dark) {
@@ -74,6 +76,10 @@ summary {
     --nav-focused: rgb(255, 56, 92);
     --bolletjes-color: rgb(255, 255, 255);
     --bolletjes-unfocused: rgb(138, 138, 138);
+    --footer-color: rgb(45, 45, 45);
+  --button-gradient: radial-gradient(circle at center,#FF385C 0%,#E61E4D 27.5%,#E31C5F 40%,#D70466 57.5%,#BD1E59 75%,#BD1E59 100%);
+
+
   }
 
   header nav img {
@@ -209,6 +215,7 @@ footer section:nth-last-child(2) button {
   border: none;
   font-family: CerealMedium;
   font-size: 14px;
+  color: var(--color-text);
 }
 
 footer section:nth-last-child(2) button:focus {
