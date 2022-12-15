@@ -204,7 +204,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Jordy      | Lars S          | Nikki    | student 4        |
+  | Jordy      | Lars S          | Nikki    |
   | ---            | ---                | ---          | ---              |
   | Buttons over het plaatje  | nav balk | Nikki heeft uitgebreide vragen die op [haar github](https://github.com/stuffbynikki/blokweb) terug zijn te vinden        | 
   |  | hamburger menu op mobiel |  | 
@@ -228,19 +228,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/uitkomst.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ik heb geleerd hoe ik om moet gaan met de position property. 
+
+  <img src="readme-images/position.png" width="375px" alt="positioning voorbeeld">
+
+  Ook heb ik geleerd hoe ik nettere CSS kan schrijven
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Het is mij niet gelukt om een widget te maken, waardoor je de zoek functie kon verfijnen.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/widget.png" width="375px" alt="bummer">
 </details>
 
 
@@ -253,5 +256,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>continu bijhouden terwijl je werkt</summary>
 
   1. Carroussel codepen van Sanne
+  2. Alle SVG's zijn van Airbnb.com
 
 </details>
