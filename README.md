@@ -112,7 +112,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | Jordy          | Lars S              | Nikki      | 
   | ---            | ---                | ---          | 
   | hoe kan ik mijn carroussel laten werken | Hoe maak ik mijn home pagina aanzienlijker voor de gebruiker | Nikki heeft uitgebreide vragen die op [haar github](https://github.com/stuffbynikki/blokweb) terug zijn te vinden    | 
-  |     | werken poups in het nadeel of voordeel van mijn site  | nog een punt | dit wil ik zeker |
+  |     | werken poups in het nadeel of voordeel van mijn site  | 
 
 
 
@@ -143,12 +143,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Jordy                 | student 2          | student 3    | student 4        |
-  | ---                   | ---                | ---          | ---              |
-  | Inline posititioning met svg icoon.  | en dit             | en ik dit    | en dan ik dat    |
-  |        | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | Margin bij de carroussel         | ...                | ...          | ...              |
-  |             |
+  | Jordy                 | Lars S          | Nikki    | 
+  | ---                   | ---                | ---          | 
+  | Inline posititioning met svg icoon. | Hoe maak ik een goede nav | en ik dit Nikki heeft uitgebreide vragen die op [haar github](https://github.com/stuffbynikki/blokweb) terug zijn te vinden      | 
+  | Margin bij de carroussel | hoe stijl ik een formulier  |   | 
+  |        | hoe zet ik grid op fotos? | | 
 
 
   ### Verslag van meeting
