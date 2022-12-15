@@ -109,11 +109,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Jordy          | Nikki              | Lars S       | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | hoe kan ik mijn carroussel laten werken | en dit             | en ik dit    | en dan ik dat    |
-  |     | dit als er tijd is | nog een punt | dit wil ik zeker |
-  |    | ...                | ...          | ...              |
+  | Jordy          | Lars S              | Nikki      | 
+  | ---            | ---                | ---          | 
+  | hoe kan ik mijn carroussel laten werken | Hoe maak ik mijn home pagina aanzienlijker voor de gebruiker | Nikki heeft uitgebreide vragen die op [haar github](https://github.com/stuffbynikki/blokweb) terug zijn te vinden    | 
+  |     | werken poups in het nadeel of voordeel van mijn site  | nog een punt | dit wil ik zeker |
+
 
 
   ### Verslag van meeting
