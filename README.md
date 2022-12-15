@@ -86,13 +86,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown-hele-pagina.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/breakdown-interactie.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
@@ -114,9 +111,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | Jordy          | Nikki              | Lars S       | student 4        |
   | ---            | ---                | ---          | ---              |
-  | hoe kan ik mij | en dit             | en ik dit    | en dan ik dat    |
-  | carroussel     | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | laten werken   | ...                | ...          | ...              |
+  | hoe kan ik mijn carroussel laten werken | en dit             | en ik dit    | en dan ik dat    |
+  |     | dit als er tijd is | nog een punt | dit wil ik zeker |
+  |    | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
@@ -148,14 +145,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | Jordy                 | student 2          | student 3    | student 4        |
   | ---                   | ---                | ---          | ---              |
-  | Inline posititioning  | en dit             | en ik dit    | en dan ik dat    |
-  | met svg icoon.        | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | Margin bij de         | ...                | ...          | ...              |
-  | carroussel            |
+  | Inline posititioning met svg icoon.  | en dit             | en ik dit    | en dan ik dat    |
+  |        | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Margin bij de carroussel         | ...                | ...          | ...              |
+  |             |
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - margin voor carroussel moest op de section en niet de img's
   - svg bevat heel vele troep waardoor mijn css niet werkte
@@ -172,35 +168,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 8e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Screenreader gebruik gaat beter, headers en links worden voorgelezen en zijn klikbaar. De site is te bedienen met muis en toetsenbord en er zijn focus states aanwezig. De site gebruikt een klein kleurenpalet waardoor het voor mensen met een visuele beperking alsnog mogelijk is de site te gebruiken.
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Je kan door middel van een screenreader door de website heen lopen en een boeking reserveren.
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-  kan goed met muis, duidelijk wat interactief is
-  geen goede focus states bij diverse elementen, zoals buttons en bolletjes, eerste  
+  Er wordt goed gebruik gemaakt van verschillende button states waardoor het mogelijk is om te zien wat interactief is en wat niet. Ook zie je waar je bent op de website door deze states.
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen) met parkinson nog prima te doen,  vingers aan elkaar boeit niet
+  Het is lastig om de foto's van een Airbnb te bekijken als de motoriek van een persoon minder is, dit heb ik verbeterd door ervoor te zorgen dat de carroussel bediend kan worden door middel van het toetsenbord.
 
 
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen) lastiger met blindhed maar wel te doen, 
+  Doordat er een simpel kleurenpalet gebruikt wordt is het alsnog mogelijk om gebruik te maken van de website als iemand visueel beperkt is. Er is geen dark mode aanwezig, deze heb ik zelf wel toegevoegd.
 
 </details>
 
@@ -214,26 +199,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het was lastig om te beginnen met het positioneren van de tweede pagina, maar dit is toch wel gelukt. Mijn css heb ik wat netter gemaakt door middel van meer ruimte tussen code en comment blocks.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Jordy      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Buttons over het plaatje  | en dit             | en ik dit    | en dan ik dat    |
+  |  | dit als er tijd is | nog een punt | dit wil ik zeker |
+  |             | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - css targeting moet verbeterd worden.
+  - moet tweede pagina positioneren
 
 </details>
 
